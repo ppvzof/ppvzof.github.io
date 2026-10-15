@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Informativo y Cultural</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+color: #ffffff;
+}
+body {
+background: url('https://www.solarsystemscope.com/spacepedia/images/thumbs/Earth.jpg') no-repeat center center fixed;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+header {
+width: 100%;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(0, 0, 0, 0.5);
+}
+.live-btn {
+background-color: #ff0000;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.live-indicator {
+width: 12px;
+height: 12px;
+background-color: #ffffff;
+border-radius: 50%;
+animation: pulse 1s infinite;
+}
+@keyframes pulse {
+0% { opacity: 1; }
+50% { opacity: 0.3; }
+100% { opacity: 1; }
+}
+main {
+flex: 1;
+max-width: 800px;
+width: 90%;
+margin: 40px auto;
+background: rgba(0, 0, 0, 0.6);
+padding: 30px;
+border-radius: 15px;
+text-align: center;
+}
+h1 { margin-bottom: 20px; }
+.section-title {
+margin: 30px 0 10px 0;
+border-bottom: 2px solid #00d2ff;
+display: inline-block;
+padding-bottom: 5px;
+}
+p, .content-grid { margin-top: 15px; }
+.content-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+.placeholder-box {
+background: rgba(255, 255, 255, 0.1);
+padding: 40px 20px;
+border-radius: 10px;
+border: 1px solid rgba(255,255,255,0.2);
+}
+footer {
+width: 100%;
+background: rgba(0, 0, 0, 0.8);
+padding: 30px;
+text-align: center;
+}
+.social-links, .contact-links {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 15px;
+}
+.social-links a, .contact-links a {
+color: #00d2ff;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1em;
+}
+.social-links a:hover, .contact-links a:hover {
+color: #ffffff;
+}
+.contact-links a { color: #00ff66; }
+</style>
+</head>
+<body>
+<header>
+<div>
+<h2>Noticias y Cultura Indígena</h2>
+</div>
+<a href="#" class="live-btn">
+<div class="live-indicator"></div>
+EN VIVO AHORA
+</a>
+</header>
+<main>
+<h1>Nuestra Misión y Visión</h1>
+<p><strong>Misión:</strong> Difundir noticias verídicas y promover la riqueza cultural, tradiciones y costumbres de los pueblos indígenas ante el mundo.</p>
+<p><strong>Visión:</strong> Ser la plataforma digital líder en difusión cultural y periodismo auténtico, conectando comunidades globalmente.</p>
+<h2 class="section-title">Secciones Principales</h2>
+<div class="content-grid">
+<div class="placeholder-box">Últimas Noticias</div>
+<div class="placeholder-box">Galería de Fotos</div>
+<div class="placeholder-box">Reportajes en Video</div>
+</div>
+</main>
+<footer>
+<h3>Contenido en Plataformas Digitales</h3>
+<div class="social-links">
+<a href="#">TikTok</a>
+<a href="#">Kwai</a>
+<a href="#">Bigo Live</a>
+<a href="#">Instagram</a>
+<a href="#">X (Twitter)</a>
+<a href="#">LinkedIn</a>
+<a href="#">Zangi</a>
+</div>
+<h3 style="margin-top: 30px;">Contacto Directo</h3>
+<div class="contact-links">
+<a href="#">Facebook</a>
+<a href="#">Telegram</a>
+<a href="#">WhatsApp</a>
+</div>
+</footer>
+</body>
+</html>
